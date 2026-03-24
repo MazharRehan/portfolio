@@ -5,182 +5,492 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mazhar - Developer Portfolio</title>
+    <title>Muhammad Mazhar Rehan - Software Engineer</title>
     <link href="stylesheet.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="shortcut icon" href="favicon.ico" />
-
 </head>
 
 <body>
+    <!-- ===== NAVBAR ===== -->
     <header>
         <nav>
-            <div class="left">Mazhar's Portfolio</div>
+            <div class="nav-brand">Mazhar Rehan</div>
             <div class="menu-icon" onclick="toggleMenu()">
                 <div></div>
                 <div></div>
                 <div></div>
-            </div> 
-            <div class="right">
+            </div>
+            <div class="nav-links" id="navLinks">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#section2">About</a></li>
-                    <li><a href="#section1">Services</a></li>
-                    <!-- <li><a href="/">Projects</a></li> -->
-                    <li><a href="#section3">Contact Me</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-            </div>           
+            </div>
         </nav>
     </header>
+
     <main>
-        <section class="firstSection" id="firstSection">
-            <div class="leftSection">
-                Hi, my name is <span class="purple">Mazhar</span>
-                <div>and I am a passionate</div>
-                <!-- Element to contain animated typing -->
+        <!-- ===== HERO ===== -->
+        <section id="home" class="hero">
+            <div class="hero-left">
+                <p class="hero-greeting">Hi, my name is</p>
+                <h1 class="hero-name"><span class="purple">Muhammad Mazhar Rehan</span></h1>
+                <p class="hero-subtitle">and I am a</p>
                 <span id="element"></span>
+                <div class="hero-buttons">
+                    <a href="https://www.linkedin.com/in/mazharrehan/" target="_blank" class="btn">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/mazharrehan" target="_blank" class="btn">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="mailto:mazharrehan80@gmail.com" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i> Hire Me
+                    </a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <img src="bg.png" alt="Muhammad Mazhar Rehan">
+            </div>
+        </section>
 
-                <div class="buttons">
-<!--                     <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="mazharrehan" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://pk.linkedin.com/in/mazharrehan?trk=profile-badge">Muhammad Mazhar Rehan</a></div> -->
-                    <button class="btn"><a href="https://www.linkedin.com/in/mazhar-rehan" target="_blank">Visit
-                            LinkedIn </a>
-                    </button>
-                    <button class="btn"> <a href="https://github.com/mazharrehan" target="_blank"> Visit Github </a>
-                    </button>
-                </div>
-            </div>
-            <!-- </div> -->
-            <div class="rightSection">
-                <img src="bg.png" alt="">
-            </div>
-        </section>
         <hr>
-        <section class="services" id="section1">
-            <div class="services-heading">
-                <h1><u>Services</u></h1>
-            </div>
-            <div class="services-line">
-                <p>Here are some of my services</p>
-            </div>
-            <div class="services-container">
-                <div class="services-box">
-                    <div class="services-title">
-                        <h2>Web Development</h2>
-                    </div>
-                    <div class="services-desc">
-                        <p></p> I can develop a responsive website.</p>
-                    </div>
-                    <div class="services-desc">
-                        <p> I can develop an E-Comerce website.</p>
-                    </div>
-                    <div class="services-desc">
-                        <p> I also provide website maintenance services.</p>
-                    </div>
 
-                </div>
-                <div class="services-box">
-                    <div class="services-title">
-                        <h2>Web Development</h2>
+        <!-- ===== ABOUT ===== -->
+        <section id="about" class="section">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-container">
+                <div class="about-text">
+                    <p>
+                        Results-driven Software Engineer with hands-on experience in designing, developing, and
+                        maintaining enterprise-level web applications using <strong>ASP.NET Core</strong>,
+                        <strong>Entity Framework Core</strong>, and <strong>SQL Server</strong>. Proficient in
+                        full-stack development, RESTful API design, and Clean Architecture principles.
+                    </p>
+                    <br>
+                    <p>
+                        Skilled in Agile collaboration, code optimization, and test-driven practices. Passionate
+                        about delivering secure, scalable, and maintainable software solutions while continuously
+                        learning emerging technologies.
+                    </p>
+                    <br>
+                    <p>
+                        Dedicated Software Engineering graduate with a strong foundation in backend development,
+                        software design &amp; architecture, database systems, data structures &amp; algorithms, and
+                        DevOps principles. Eager to contribute to innovative, scalable projects and continuously
+                        grow in a fast-changing tech landscape.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Lahore, Punjab, Pakistan</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>mazharrehan80@gmail.com</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+92 323 3673470</span>
+                        </div>
                     </div>
-                    <div class="services-desc">
-                        <p>I can develop a responsive website for you.</p>
-                    </div>
-                </div>
-                <div class="services-box">
-                    <div class="services-title">
-                        <h2>Web Development</h2>
-                    </div>
-                    <div class="services-desc">
-                        <p>I can develop a responsive website for you.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <hr>
-        <section class="About" id="section2">
-            <div class="About-heading">
-                <h1><U>About Me</U></h1>
-            </div>
-            <div class="About-Box">
-                <div class="About-desc">
-                    I am Muhammad Mazhar Rehan, a software engineering enthusiast from Lahore, Pakistan. I love creating
-                    amazing things with technology and solving problems along the way. I am skilled in web development, C/C++
-                    programming, and has a talent for finding solutions to complex challenges. I know how to build impressive 
-                    websites and user-friendly web applications using modern
-                    tools like HTML,
-                    CSS,JavaScript, React, and Angular. I am also experienced in system-level programming using C/C++,
-                    which
-                    means I can work on all sorts of exciting projects.
-                <br>
-                    My passion for learning keeps me up to date with the latest trends and technologies in the software
-                    engineering field. I enjoys being part of software engineering communities, where I can collaborate
-                    with
-                    others who share
-                    my love for technology. With me on your side, you can expect outstanding work and innovative
-                    solutions
-                    in the fast-paced world
-                    of software engineering. Get ready for a journey filled with creativity, problem-solving, and
-                    remarkable
-                    achievements.
                 </div>
             </div>
         </section>
+
         <hr>
-        <section class="Contact" id="section3">
-            <div class="Contact-heading">
-                <h1><U>Contact Me</U></h1>
+
+        <!-- ===== EXPERIENCE ===== -->
+        <section id="experience" class="section">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <h3>Associate Software Engineer (.NET)</h3>
+                            <span class="company">InvoByte</span>
+                            <span class="duration">Aug 2025 – Present &middot; Lahore, Pakistan</span>
+                        </div>
+                        <ul class="timeline-desc">
+                            <li>Developed and maintained enterprise modules for the PLRA Arazi Moawin government web platform.</li>
+                            <li>Built RESTful APIs and data repositories using ASP.NET Core, C#, and Entity Framework Core.</li>
+                            <li>Applied Clean Architecture and SOLID principles for scalable system design.</li>
+                            <li>Optimized SQL Server stored procedures and queries for improved performance.</li>
+                            <li>Collaborated in Agile sprints with CI/CD workflows using Azure DevOps.</li>
+                            <li>Worked across cross-functional teams (Frontend, QA, DevOps) to deliver full-stack solutions.</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>ASP.NET Core</span><span>C#</span><span>EF Core</span>
+                            <span>SQL Server</span><span>Azure DevOps</span><span>Clean Architecture</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <h3>Machine Learning Engineer</h3>
+                            <span class="company">NetXil</span>
+                            <span class="duration">Feb 2025 – Dec 2025 &middot; Remote</span>
+                        </div>
+                        <div class="tech-tags">
+                            <span>Machine Learning</span><span>Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <h3>Python Programming Intern</h3>
+                            <span class="company">CodSoft</span>
+                            <span class="duration">Sept 2023 – Oct 2023 &middot; Remote</span>
+                        </div>
+                        <ul class="timeline-desc">
+                            <li>Enhanced Python programming and problem-solving skills through collaborative project work.</li>
+                            <li>Developed automation and data-driven scripts under guided mentorship.</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>Python</span><span>Automation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <h3>Junior React Native Developer</h3>
+                            <span class="company">My Digital Pixels</span>
+                            <span class="duration">Apr 2023 – May 2023 &middot; Lahore, Pakistan</span>
+                        </div>
+                        <ul class="timeline-desc">
+                            <li>Developed mobile apps using React Native.</li>
+                            <li>Collaborated with senior developers on app optimization.</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span>React Native</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="Contact-Box">
-                <ul>
-                    <li class="Platform">
-                        <a href="https://github.com/MazharRehan"  target="_blank"><image class="image" src="github-icon.png" alt="Logo"></image><u class="details">MazharRehan</u> </a>
-                    </li>
-                    <li class="Platform">
-                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"  target="_blank"><image class="image" src="mail-icon.png" alt="Logo"></image><u class="details">mazharrehan80@gmail.com</u></a> 
-                    </li>
-                    <li class="Platform">
-                        <a href="https://www.facebook.com/mazharrehan99"  target="_blank"><image class="image" src="facebook-logo.png" alt="Logo"></image><u class="details">mazharrehan99</u></a>
-                    </li>
-                    <li class="Platform">
-                        <a href="https://www.instagram.com/mazharrehan99"  target="_blank"><image class="image" src="instagram.png" alt="Logo"></image><u class="details">mazharrehan99</u></a>
-                    </li>
-                    <li class="Platform">
-                        <a href="https://www.linkedin.com/in/mazharrehan/"  target="_blank"><image class="image" src="linkedin.png" alt="Logo"></image><u class="details">MazharRehan</u></a>
-                    </li>
-                    <li class="Platform">
-                        <a href="https://wa.me/+923233673470"  target="_blank"><image class="image" src="whatsapp-icon.png" alt="Logo"></image><u class="details">+92 323 3673470</u></a>
-                    </li>
-                    <li class="Platform">
-                        <image class="image" src="location.png" alt="Logo"></image><u class="details" style="text-decoration: none;">Lahore, Punjab, Pakistan.</u>
-                    </li>
-                </ul>
+        </section>
+
+        <hr>
+
+        <!-- ===== SKILLS ===== -->
+        <section id="skills" class="section">
+            <h2 class="section-title">Skills &amp; Tools</h2>
+            <div class="skills-grid">
+
+                <div class="skills-card">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <div class="skill-tags">
+                        <span>C#</span><span>Python</span><span>Java</span><span>JavaScript</span>
+                        <span>PHP</span><span>C/C++</span><span>SQL</span><span>HTML</span><span>CSS</span>
+                    </div>
+                </div>
+
+                <div class="skills-card">
+                    <h3><i class="fas fa-layer-group"></i> Frameworks &amp; Technologies</h3>
+                    <div class="skill-tags">
+                        <span>ASP.NET Core</span><span>Entity Framework Core</span>
+                        <span>RESTful APIs</span><span>SOAP APIs</span>
+                        <span>Django (basic)</span><span>React Native</span>
+                    </div>
+                </div>
+
+                <div class="skills-card">
+                    <h3><i class="fas fa-database"></i> Databases</h3>
+                    <div class="skill-tags">
+                        <span>SQL Server</span><span>MySQL</span><span>Stored Procedures</span>
+                        <span>Database Design</span><span>Schema Optimization</span><span>Query Tuning</span>
+                    </div>
+                </div>
+
+                <div class="skills-card">
+                    <h3><i class="fas fa-drafting-compass"></i> Architecture &amp; Design</h3>
+                    <div class="skill-tags">
+                        <span>Clean Architecture</span><span>Layered Architecture</span>
+                        <span>MVC</span><span>SOLID Principles</span><span>Design Patterns</span><span>OOP</span>
+                    </div>
+                </div>
+
+                <div class="skills-card">
+                    <h3><i class="fas fa-tools"></i> Tools &amp; DevOps</h3>
+                    <div class="skill-tags">
+                        <span>Git</span><span>GitHub</span><span>Azure DevOps</span>
+                        <span>Visual Studio</span><span>Postman</span><span>Selenium</span>
+                        <span>JUnit</span><span>CI/CD</span>
+                    </div>
+                </div>
+
+                <div class="skills-card">
+                    <h3><i class="fas fa-users"></i> Practices &amp; Soft Skills</h3>
+                    <div class="skill-tags">
+                        <span>Agile / Scrum</span><span>TDD (basic)</span><span>Code Reviews</span>
+                        <span>Problem-Solving</span><span>Analytical Thinking</span><span>Teamwork</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- ===== PROJECTS ===== -->
+        <section id="projects" class="section">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-brain project-icon"></i>
+                        <h3>AI-Driven Dynamic Floor Plan Generator</h3>
+                        <span class="project-date">Sept 2024 – Jul 2025</span>
+                        <span class="project-badge">Final Year Project</span>
+                    </div>
+                    <p class="project-desc">
+                        A CGAN + CNN based model for automated residential floor plan generation under user-defined
+                        constraints. Integrated spatial feature learning to improve layout coherence and structural
+                        accuracy. Built a web platform with real-time customization and CAD export support.
+                        Also contributed a public dataset to support ongoing research in generative models.
+                    </p>
+                    <div class="tech-tags">
+                        <span>Python</span><span>Django</span><span>CGANs</span><span>CNNs</span><span>CAD Export</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-truck project-icon"></i>
+                        <h3>Logistics Dispatch Management System</h3>
+                        <span class="project-date">May 2024</span>
+                        <span class="project-badge">Desktop Application</span>
+                    </div>
+                    <p class="project-desc">
+                        Modular Java-based dispatch management system for truck and inventory coordination.
+                        Designed normalized SQL database schema for efficient transaction handling and reporting.
+                        Implemented role-based access control and data validation mechanisms to improve
+                        operational workflow.
+                    </p>
+                    <div class="tech-tags">
+                        <span>Java</span><span>SQL</span><span>Apache NetBeans</span><span>RBAC</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-share-nodes project-icon"></i>
+                        <h3>Social Media Platform</h3>
+                        <span class="project-date">Jul 2023</span>
+                        <span class="project-badge">Full-Stack Web App</span>
+                    </div>
+                    <p class="project-desc">
+                        Full-stack social networking platform with posts, comments, likes, and follow system.
+                        Implemented secure user authentication with session management and password hashing.
+                        Applied input validation and query parameterization to prevent SQL injection vulnerabilities.
+                    </p>
+                    <div class="tech-tags">
+                        <span>PHP</span><span>JavaScript</span><span>MySQL</span><span>HTML</span><span>CSS</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- ===== CERTIFICATIONS ===== -->
+        <section id="certifications" class="section">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certs-grid">
+
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-file-code"></i></div>
+                    <div class="cert-info">
+                        <h3>YAML Fundamentals for DevOps, Cloud and IaC Engineers</h3>
+                        <span class="cert-issuer">Packt</span>
+                        <span class="cert-date">Dec 2024</span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-shield-halved"></i></div>
+                    <div class="cert-info">
+                        <h3>Cybersecurity Training Workshop</h3>
+                        <span class="cert-issuer">Ignite &ndash; National Technology Fund</span>
+                        <span class="cert-date">Sept 2024</span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-infinity"></i></div>
+                    <div class="cert-info">
+                        <h3>DevOps Workshop</h3>
+                        <span class="cert-issuer">Cloud Contra</span>
+                        <span class="cert-date">Jul 2023</span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-database"></i></div>
+                    <div class="cert-info">
+                        <h3>SQL (Advanced)</h3>
+                        <span class="cert-issuer">HackerRank</span>
+                        <span class="cert-date">Apr 2023</span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-database"></i></div>
+                    <div class="cert-info">
+                        <h3>SQL (Basic)</h3>
+                        <span class="cert-issuer">HackerRank</span>
+                        <span class="cert-date">&ndash;</span>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-trophy"></i></div>
+                    <div class="cert-info">
+                        <h3>Code Rush II</h3>
+                        <span class="cert-issuer">UCP</span>
+                        <span class="cert-date">&ndash;</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- ===== EDUCATION ===== -->
+        <section id="education" class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="edu-timeline">
+
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="edu-info">
+                        <h3>Bachelor of Science in Software Engineering (Honors)</h3>
+                        <span class="edu-institution">University of Central Punjab, Lahore</span>
+                        <span class="edu-duration">Oct 2021 – Jul 2025</span>
+                        <span class="edu-grade">CGPA: 3.69 / 4.0</span>
+                        <p class="edu-subjects">
+                            Software Design &amp; Architecture &middot; Database Systems &middot;
+                            Operating Systems &middot; Distributed Systems &middot;
+                            Software Quality Assurance &middot; Data Structures &amp; Algorithms &middot; DevOps
+                        </p>
+                    </div>
+                </div>
+
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fas fa-school"></i></div>
+                    <div class="edu-info">
+                        <h3>FSc, Pre-Engineering</h3>
+                        <span class="edu-institution">KIPS College, Lahore</span>
+                        <span class="edu-duration">2019 – 2021</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- ===== CONTACT ===== -->
+        <section id="contact" class="section">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-grid">
+
+                <a href="https://github.com/mazharrehan" target="_blank" class="contact-card">
+                    <i class="fab fa-github"></i>
+                    <span>github.com/mazharrehan</span>
+                </a>
+
+                <a href="mailto:mazharrehan80@gmail.com" class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <span>mazharrehan80@gmail.com</span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/mazharrehan/" target="_blank" class="contact-card">
+                    <i class="fab fa-linkedin"></i>
+                    <span>linkedin.com/in/mazharrehan</span>
+                </a>
+
+                <a href="https://wa.me/+923233673470" target="_blank" class="contact-card">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>+92 323 3673470</span>
+                </a>
+
+                <a href="https://www.facebook.com/mazharrehan99" target="_blank" class="contact-card">
+                    <i class="fab fa-facebook"></i>
+                    <span>mazharrehan99</span>
+                </a>
+
+                <a href="https://www.instagram.com/mazharrehan99" target="_blank" class="contact-card">
+                    <i class="fab fa-instagram"></i>
+                    <span>mazharrehan99</span>
+                </a>
+
+                <div class="contact-card no-link">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Lahore, Punjab, Pakistan</span>
+                </div>
+
             </div>
         </section>
     </main>
+
     <footer>
         <div class="footer-rights">
-            Copyright &#169; MazharRehan.me | All rights reserved
+            Copyright &copy; 2025 Muhammad Mazhar Rehan &nbsp;|&nbsp; All rights reserved
         </div>
     </footer>
+
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <!-- Setup and start animation! -->
     <script>
         var typed = new Typed('#element', {
-            strings: ['Software Engineer', 'Web Developer', 'C/C++ Developer', 'Database Engineer'],
+            strings: [
+                'Software Engineer',
+                '.NET Developer',
+                'Full-Stack Developer',
+                'SQL Engineer',
+                'Backend Developer',
+                'ML Engineer'
+            ],
             typeSpeed: 50,
+            backSpeed: 30,
             loop: true,
         });
     </script>
     <script>
         function toggleMenu() {
-            const navItems = document.querySelector('nav ul');
-            navItems.style.display = navItems.style.display === 'none' ? 'flex' : 'none';
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('open');
         }
-    </script>  
-<!--     <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script> -->
-<!--     <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="VERTICAL" data-vanity="mazhar-rehan" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://pk.linkedin.com/in/mazhar-rehan?trk=profile-badge">Muhammad Mazhar Rehan</a></div> -->
+        document.querySelectorAll('.nav-links a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                document.getElementById('navLinks').classList.remove('open');
+            });
+        });
+    </script>
 </body>
 
 </html>
