@@ -240,6 +240,76 @@ main hr {
     font-size: 1rem;
 }
 
+/* ===== SERVICES ===== */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 26px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background: linear-gradient(135deg, #12123e, #18185a);
+    border-radius: 14px;
+    padding: 30px 28px;
+    box-shadow: 0 4px 20px rgba(112, 0, 254, 0.15);
+    border-left: 4px solid rgb(112, 0, 254);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(112, 0, 254, 0.35);
+}
+
+.service-icon {
+    font-size: 2.4rem;
+    color: rgb(170, 107, 228);
+}
+
+.service-card h3 {
+    font-size: 1.05rem;
+    color: rgb(0, 213, 255);
+    line-height: 1.4;
+}
+
+.service-desc {
+    font-size: 0.91rem;
+    color: #ccc;
+    line-height: 1.75;
+}
+
+.service-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-top: 4px;
+}
+
+.service-features li {
+    font-size: 0.86rem;
+    color: #ddd;
+    padding-left: 18px;
+    position: relative;
+}
+
+.service-features li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 7px;
+    height: 7px;
+    background-color: rgb(112, 0, 254);
+    border-radius: 50%;
+}
+
 /* ===== EXPERIENCE TIMELINE ===== */
 .timeline {
     position: relative;
